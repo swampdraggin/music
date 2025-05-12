@@ -1,4 +1,5 @@
 ---
-title: Welcome to my blog
+title: Greenhouse
 ---
 
+Email us at greenhousemusica@gmail.com
