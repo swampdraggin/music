@@ -3,18 +3,42 @@
   <head>
     <style>
         body {background-color:rgb(30,38,38);}
-        h3 {color:rgb(98,122,99);
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;}
+        h3 {
+          color:rgb(98,122,99);
+          text-align: center;
+          font-family: 'Courier New', Courier, monospace;
+          
+          }
         a  {color:rgb(101, 154, 114);
             text-align: center;
             display: block;
             font-family:'Courier New', Courier, monospace;}
         img {display:block;
-             margin-left: auto;
-             margin-right: auto;}
-    
-    
+             }
+        .tabs {
+      
+          position: fixed;
+          z-index: 1;
+          top: 30px;
+          left: 30px;
+          right: 30px;
+          background-color: rgb(22, 29, 29);
+          border: 3px;
+          border-style:solid;
+        }
+        .tabs button {
+          float: left;
+          text-align:center;
+          background-color: inherit;
+
+        }
+        .tabcontent {
+          display: none;
+          padding:173px 25px;
+        }
+        main {
+          margin-top: 200px;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,17 +48,45 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <!--tab menu-->
+    <div class="tabs">
+    <a href="index.html"><button><img style="padding: 5px;" src="https://github.com/swampdraggin/music/blob/main/images/Greenhouselogo.png?raw=true" alt="Greenhouse logo" width="100px"></button></a>
+    
+    <button class="tablinks" onclick="openBio(event, 'SwampDragon')"><img src="https://github.com/swampdraggin/music/blob/main/images/Swampdragonlogo.png?raw=true" width="250px"></button>
+    <button class="tablinks" onclick="openBio(event, 'Ellie2')"><h3>ellie 2</h3></button>
+    <button class="tablinks" onclick="openBio(event, 'Juno')"><img src="https://github.com/swampdraggin/music/blob/main/images/Junologo.png?raw=true" width="100px"></button>
+    <button class="tablinks" onclick="openBio(event, 'Wolf')"><img src="https://github.com/swampdraggin/music/blob/main/images/Cool%20Text%20-%20StayWildWolf%20482413873065132.png?raw=true" width="300px"></button>
+    <button class="tablinks" onclick="openBio(event, 'P1nkiePi3')"><h3>pinkiepie</h3></button>
+    <button class="tablinks" onclick="openBio(event, 'Merch')"><h3>merch</h3></button>
+    <button class="tablinks" onclick="openBio(event, 'Contact')"><h3>contact</h3></button>
+  </div>
+    <!--tab content-->
+    <div id="SwampDragon" class="tabcontent">
+      <img src="https://github.com/swampdraggin/music/blob/main/images/draggin%20pfp.png?raw=true" width="200px">
+      <h3>i am swampdragon.</h3>
+    </div>
+    <div id="Ellie2" class="tabcontent">
+      <h3>elixabeth twyce:</h3>
+    </div>
+    <div id="Juno" class="tabcontent">
+      <h3>juno:</h3>
+    </div>
+    <div id="Wolf" class="tabcontent">
+      <h3>staywildwolf:</h3>
+    </div>
+    <div id="P1nkiePi3" class="tabcontent">
+      <h3>p1nkiepi3:</h3>
+    </div>
+    <div id="Merch" class="tabcontent">
+      <h3>merch:</h3>
+    </div>
+    <div id="Contact" class="tabcontent">
+      <h3>contact info:</h3>
+    </div>
     <main>
-        <!-- add image source here -->
-        <img src="https://github.com/swampdraggin/music/blob/main/images/Greenhouselogo.png?raw=true" alt="Greenhouse logo" width="200">
-        <h3>new music out soon!</h3>
         
-        <h3>socials</h3>
-        <a href="https://www.youtube.com/@Swamp-Dragoon">swampdragon youtube</a>
-       <br>
-        <a href="https://www.youtube.com/@elixabethtwyce">elixabeth twyce youtube</a>
-       <br>
-        <a href="https://www.youtube.com/@JunotheHappySower">Juno youtube</a>
+        <h3>site is a work in progress 🏗️</h3>
+        
     </main>
     <script src="index.js"></script>
   </body>
