@@ -10,8 +10,7 @@
           
           }
         a  {color:rgb(101, 154, 114);
-            text-align: center;
-            display: block;
+
             font-family:'Courier New', Courier, monospace;}
         img {display:block;
              }
@@ -34,10 +33,30 @@
         }
         .tabcontent {
           display: none;
-          padding:173px 25px;
+          padding:173px 23px;
         }
         main {
           margin-top: 200px;
+
+        }
+        p {
+          color: rgb(98,122,99);
+          font-family: 'Courier New', Courier, monospace;
+        }
+      
+        @media only screen and (max-width: 875px) {
+          .tabcontent {
+            padding: 239px 23px;
+          }
+          @media only screen and (max-width: 706px) {
+          .tabcontent {
+            padding: px 23px;
+        }  
+          main {
+            margin-top: 500px;
+          }
+        
+        }
         }
     </style>
     <meta charset="UTF-8">
@@ -50,15 +69,15 @@
   <body>
     <!--tab menu-->
     <div class="tabs">
-    <a href="index.html"><button><img style="padding: 5px;" src="https://i.postimg.cc/76GHVP7y/Greenhouselogo.png" alt="Greenhouse logo" width="100px"></button></a>
+    <a href="index.html"><button><img style="padding: 5px;" src="https://i.postimg.cc/76GHVP7y/Greenhouselogo.png" alt="Greenhouse logo" height="116px"></button></a>
     
-    <button class="tablinks" onclick="openBio(event, 'SwampDragon')"><img src="https://i.postimg.cc/y6h4zS7b/Swampdragonlogo.png" width="250px"></button>
-    <button class="tablinks" onclick="openBio(event, 'Ellie2')"><h3>ellie 2</h3></button>
-    <button class="tablinks" onclick="openBio(event, 'Juno')"><img src="https://i.postimg.cc/8CCP7mzc/Junologo.png" width="100px"></button>
-    <button class="tablinks" onclick="openBio(event, 'Wolf')"><img src="https://i.postimg.cc/FKk8CYPG/Cool-Text-Stay-Wild-Wolf-482413873065132.png" width="300px"></button>
-    <button class="tablinks" onclick="openBio(event, 'P1nkiePi3')"><h3>pinkiepie</h3></button>
-    <button class="tablinks" onclick="openBio(event, 'Merch')"><h3>merch</h3></button>
-    <button class="tablinks" onclick="openBio(event, 'Contact')"><h3>contact</h3></button>
+    <button class="tablinks" onclick="openBio(event, 'SwampDragon')"><img src="https://i.postimg.cc/NjDjGzYZ/cooltext482411295500824.gif" height="60px"></button>
+    <button class="tablinks" onclick="openBio(event, 'Ellie2')"><img src="https://i.postimg.cc/m2LThSD9/ellie2.gif" height="60px"></button>
+    <button class="tablinks" onclick="openBio(event, 'Juno')"><img src="https://i.postimg.cc/8CCP7mzc/Junologo.png" height="60px"></button>
+    <button class="tablinks" onclick="openBio(event, 'Wolf')"><img src="https://i.postimg.cc/FKk8CYPG/Cool-Text-Stay-Wild-Wolf-482413873065132.png" height="60px"></button>
+    <button class="tablinks" onclick="openBio(event, 'P1nkiePi3')"><img src="https://i.postimg.cc/pdFmkBKT/cooltext482418121060257.png" height="60"></button>
+    <button style="height: 66px;" class="tablinks" onclick="openBio(event, 'Merch')"><h3>merch</h3></button>
+    <button style="height: 66px;"class="tablinks" onclick="openBio(event, 'Contact')"><h3>contact</h3></button>
   </div>
     <!--tab content-->
     <div id="SwampDragon" class="tabcontent">
@@ -79,10 +98,16 @@
     </div>
     <div id="Merch" class="tabcontent">
       <h3>merch:</h3>
+      <p>If you want to get a SIGNED shirt with our logo on it email/message us at: greenhousemusica@gmail.com or our <a href="https://www.instagram.com/greenhouse_ig/">instagram</a>
+      </p> 
+      
+       <p>shirts are made to order so let us know your size and we will get it to you as soon as possible idk how much they're gonna cost but theyll probably be pretty cheap</p>
     </div>
     <div id="Contact" class="tabcontent">
       <h3>contact info:</h3>
-    </div>
+      
+      <a href="https://www.instagram.com/greenhouse_ig/">instagram</a>
+     </div>
     <main>
         
         <h3>site is a work in progress 🏗️</h3>
