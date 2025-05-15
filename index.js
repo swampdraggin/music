@@ -18,3 +18,9 @@ function openBio(evt, bioName) {
     document.getElementById(bioName).style.display = "block";
     evt.currentTarget.className += " active";
   } 
+document.addEventListener("DOMContentLoaded", () => {
+  
+  openBio(event, 'Home')
+  
+  console.log("DOM fully loaded and parsed");
+});
